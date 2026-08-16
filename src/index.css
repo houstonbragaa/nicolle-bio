@@ -5,3 +5,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@theme {
+  --color-primary: #0C393F;
+  --color-secondary: #CEC5B8;
+}
