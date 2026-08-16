@@ -1,9 +1,18 @@
 @import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+@font-face {
+  font-family: 'montserrat-regular';
+  src: url('./assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'montserrat-semibold';
+  src: url('./assets/fonts/Montserrat-SemiBold.ttf');
+}
+
+body {
+  font-family: 'montserrat-regular';
 }
 
 @theme {
