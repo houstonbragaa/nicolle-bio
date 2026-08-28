@@ -60,23 +60,23 @@ const App = () => {
           />
           <Button
             icon={googleIcon}
-            link="https://dranicollepsiquiatria.com.br/"
+            link="https://www.google.com/search?sca_esv=d82df368beb8a1ba&sxsrf=ANbL-n5BD0spuQPnMg0C7koLI4BNN_VYHw:1779380310773&kgmid=/g/11yp_2yym0&q=Dra.+Nicolle+Germiniani+Sa%C3%BAde+Mental&shem=epsdc,rimspwouoe&shndl=30&source=sh/x/loc/uni/m1/1&kgs=ad7c0b66ffa237d9&utm_source=epsdc,rimspwouoe,sh/x/loc/uni/m1/1"
             text="Depoimentos"
             content={
               <div className="flex items-center justify-between text-xs text-gray-400 gap-5">
                 <p>+30 depoimentos</p>
-                <span className="text-[#396461] font-sans font-semibold">★★★★★ 5,0</span>
+                <span className="text-[#396461] font-sans font-semibold">
+                  ★★★★★ 5,0
+                </span>
               </div>
             }
           />
           <Button
             icon={gpsIcon}
-            link="https://dranicollepsiquiatria.com.br/"
+            link="https://www.google.com/maps/place/Dra.+Nicolle+Germiniani+Sa%C3%BAde+Mental/@-22.4207497,-45.4600112,925m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94cb7ba149824e05:0xb6425d2fccf6eab2!8m2!3d-22.4207497!4d-45.4600112!16s%2Fg%2F11yp_2yym0?entry=ttu&g_ep=EgoyMDI2MDgyNS4wIKXMDSoASAFQAw%3D%3D"
             text="Como chegar à clínica"
             content={
-              <p className="text-xs text-gray-400">
-                Ver no google Maps
-              </p>
+              <p className="text-xs text-gray-400">Ver no google Maps</p>
             }
           />
         </div>
