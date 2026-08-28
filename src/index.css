@@ -18,4 +18,14 @@ body {
 @theme {
   --color-primary: #0C393F;
   --color-secondary: #CEC5B8;
+  --animate-hand-bob: hand-bob 1.8s ease-in-out infinite;
+}
+
+@keyframes hand-bob {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
 }
