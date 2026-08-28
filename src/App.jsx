@@ -2,6 +2,11 @@ import { useState } from "react";
 import LoadingScreen from "./components/loading-screen";
 
 import logo from "./assets/logos/logo-vertical.png";
+import whatsappIcon from "./assets/whatsapp-icon.png";
+import handUnderIcon from "./assets/hand-under.png";
+import netIcon from "./assets/net-icon.png";
+import googleIcon from "./assets/google-icon.png";
+import gpsIcon from "./assets/gps-icon.png";
 import Button from "./components/button";
 
 const App = () => {
@@ -32,19 +37,19 @@ const App = () => {
           target="_blank"
           className="bg-[#1A7177] hover:bg-[#1a7177cd] rounded-2xl py-4 w-full flex gap-2 justify-center items-center"
         >
-          <img src="src/assets/whatsapp-icon.png" alt="whats" width={24} />
+          <img src={whatsappIcon} alt="whats" width={24} />
           <p className="font-semibold text-white">Agendar consulta</p>
         </a>
         <p className="text-xs text-gray-400">Acesse também</p>
         <img
-          src="src/assets/hand-under.png"
+          src={handUnderIcon}
           className="mb-2 animate-hand-bob"
           alt="hand"
           width={18}
         />
         <div className="w-full space-y-2">
           <Button
-            icon="src/assets/net-icon.png"
+            icon={netIcon}
             link="https://dranicollepsiquiatria.com.br/"
             text="Site Oficial"
             content={
@@ -54,7 +59,7 @@ const App = () => {
             }
           />
           <Button
-            icon="src/assets/google-icon.png"
+            icon={googleIcon}
             link="https://dranicollepsiquiatria.com.br/"
             text="Depoimentos"
             content={
@@ -65,7 +70,7 @@ const App = () => {
             }
           />
           <Button
-            icon="src/assets/gps-icon.png"
+            icon={gpsIcon}
             link="https://dranicollepsiquiatria.com.br/"
             text="Como chegar à clínica"
             content={
