@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
-
 @font-face {
-  font-family: 'montserrat-regular';
-  src: url('./assets/fonts/Montserrat-Regular.ttf');
+  font-family: "montserrat-regular";
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'montserrat-semibold';
-  src: url('./assets/fonts/Montserrat-SemiBold.ttf');
+  font-family: "montserrat-semibold";
+  src: url("./assets/fonts/Montserrat-SemiBold.ttf");
 }
 
 body {
-  font-family: 'montserrat-regular';
+  font-family: "montserrat-regular";
 }
 
 @theme {
-  --color-primary: #0C393F;
-  --color-secondary: #CEC5B8;
+  --color-primary: #0c393f;
+  --color-secondary: #cec5b8;
   --animate-hand-bob: hand-bob 1.8s ease-in-out infinite;
 }
 
 @keyframes hand-bob {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
