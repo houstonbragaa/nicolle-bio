@@ -43,7 +43,7 @@ const App = () => {
 
   return (
     <motion.div
-      className="bg-secondary/30 w-full min-h-screen flex flex-col items-center pt-16 pb-8 px-2 gap-6"
+      className="page-texture w-full min-h-screen flex flex-col items-center pt-16 pb-8 px-2 gap-6"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -111,7 +111,7 @@ const App = () => {
           content={
             <div className="flex items-center justify-between text-xs text-gray-400 gap-5">
               <p>+30 depoimentos</p>
-              <span className="text-[#396461] font-sans font-semibold">
+              <span className="text-gray-400 font-sans font-semibold">
                 ★★★★★ 5,0
               </span>
             </div>
