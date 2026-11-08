@@ -69,7 +69,7 @@ const App = () => {
         className="mt-1 z-10 text-xs text-gray-400"
         variants={itemVariants}
       >
-        Psiquiatra • CRM.MG 84432
+        Psiquiatra • CRM.MG 100183
       </motion.p>
 
       <motion.div
