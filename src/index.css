@@ -15,21 +15,15 @@ body {
 }
 
 .page-texture {
-  background-color: color-mix(in srgb, var(--color-secondary) 32%, white);
+  background-color: #f3f0eb;
   background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E"),
     radial-gradient(
       circle at 1px 1px,
       rgba(12, 57, 63, 0.039) 1px,
       transparent 0
-    ),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.35) 0%,
-      transparent 45%,
-      rgba(54, 84, 88, 0.308) 100%
     );
-  background-size: 180px 180px, 22px 22px, 100% 100%;
+  background-size: 180px 180px, 22px 22px;
 }
 
 @theme {

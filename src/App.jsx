@@ -3,6 +3,7 @@ import LoadingScreen from "./components/loading-screen";
 import { motion } from "motion/react";
 
 import logo from "./assets/logos/logo-vertical.png";
+import photo from "./assets/photo-nicolle.png";
 import whatsappIcon from "./assets/whatsapp-icon.png";
 import handUnderIcon from "./assets/hand-under.png";
 import netIcon from "./assets/net-icon.png";
@@ -43,27 +44,39 @@ const App = () => {
 
   return (
     <motion.div
-      className="page-texture w-full min-h-screen flex flex-col items-center pt-16 pb-8 px-2 gap-6"
+      className="page-texture relative mx-auto flex min-h-dvh w-full max-w-md flex-col items-center pt-5 pb-10"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
+      <motion.div className="relative w-full" variants={itemVariants}>
+        <img
+          src={photo}
+          alt="Dra. Nicolle Germiniani"
+          className="h-[46vh] max-h-120 min-h-80 w-full object-cover object-top"
+        />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-linear-to-b from-transparent to-[#f3f0eb]" />
+      </motion.div>
+
       <motion.img
         src={logo}
-        alt="logo"
-        className="w-64 h-34"
+        alt="Nicolle Germiniani Saúde Mental"
+        className="relative z-10 -mt-38 w-56"
         variants={itemVariants}
       />
 
-      <motion.p className="text-xs text-gray-400 -mt-5" variants={itemVariants}>
+      <motion.p
+        className="mt-1 z-10 text-xs text-gray-400"
+        variants={itemVariants}
+      >
         Psiquiatra • CRM.MG 84432
       </motion.p>
 
       <motion.div
-        className="bg-[#B7C9CC] px-2 py-1 rounded-full border border-primary/20 -mt-4"
+        className="mt-3 rounded-full z-10 border border-primary/20 bg-[#B7C9CC] px-2 py-1"
         variants={itemVariants}
       >
-        <p className="text-[#396461] font-montserrat-semibold text-sm">
+        <p className="font-montserrat-semibold text-sm text-[#396461]">
           Consultas online · Todo o Brasil
         </p>
       </motion.div>
@@ -71,27 +84,28 @@ const App = () => {
       <motion.a
         href="https://tinyurl.com/4kbzcxdx"
         target="_blank"
-        className="bg-[#1A7177] hover:bg-[#1a7177cd] rounded-2xl py-4 w-full max-w-90 flex gap-2 justify-center items-center"
+        rel="noreferrer"
+        className="mt-6 flex w-[calc(100%-2.5rem)] items-center justify-center gap-2 rounded-2xl bg-[#1A7177] py-4 hover:bg-[#1a7177cd]"
         variants={itemVariants}
       >
-        <img src={whatsappIcon} alt="whats" width={24} />
+        <img src={whatsappIcon} alt="" width={24} />
         <p className="font-semibold text-white">Agendar consulta</p>
       </motion.a>
 
-      <motion.p className="text-xs text-gray-400 -mt-4" variants={itemVariants}>
+      <motion.p className="mt-3 text-xs text-gray-400" variants={itemVariants}>
         Acesse também
       </motion.p>
 
       <motion.img
         src={handUnderIcon}
-        className="-mt-4 mb-1 animate-hand-bob"
-        alt="hand"
+        className="mt-0 mb-3 animate-hand-bob"
+        alt=""
         width={18}
         variants={itemVariants}
       />
 
       <motion.div
-        className="w-full max-w-90 flex flex-col gap-3 -mt-2"
+        className="-mt-1 flex w-[calc(100%-2.5rem)] flex-col gap-2"
         variants={itemVariants}
       >
         <Button
@@ -121,9 +135,7 @@ const App = () => {
           icon={gpsIcon}
           link="https://www.google.com/maps/place/Dra.+Nicolle+Germiniani+Sa%C3%BAde+Mental/@-22.4207497,-45.4600112,925m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94cb7ba149824e05:0xb6425d2fccf6eab2!8m2!3d-22.4207497!4d-45.4600112!16s%2Fg%2F11yp_2yym0?entry=ttu&g_ep=EgoyMDI2MDgyNS4wIKXMDSoASAFQAw%3D%3D"
           text="Como chegar à clínica"
-          content={
-            <p className="text-xs text-gray-400">Ver no google Maps</p>
-          }
+          content={<p className="text-xs text-gray-400">Ver no google Maps</p>}
         />
       </motion.div>
     </motion.div>
